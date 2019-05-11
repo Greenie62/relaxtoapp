@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Meditation App</title>
+</head>
+<body>
+    <div class='app'>
+        <div class='video-container'>
+            <video loop>
+                <source src="./videos/beach.mp4">
+            </video>
+        </div>
+        <div class='timer-container'>
+            <button data-timer="10">Sample</button>
+            <button data-timer="120">2 Minutes</button>
+            <button data-timer="300">5 Minutes</button>
+        </div>
+        <div class='player-container'>
+            <h2>Meditation App</h2>
+            <audio class='song'>
+                <source src="./sounds/beach.mp3">
+            </audio>
+            <img src="./pics/play.svg" class="play">
+            
+            <svg class="track_outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+                </svg>
+
+            <svg class="moving_outline"
+              width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                </svg>
+
+           
+
+                    <img src="./pics/replay.svg" class="replay">
+                    <h2 class="timer">0:00</h2>
+        </div>
+        <div class="choice_container">
+            <button data-sound="./sounds/rain.mp3" data-video="./videos/rain.mp4"><img src="./pics/rain.svg"></button>
+            <button data-sound="./sounds/beach.mp3" data-video="./videos/beach.mp4"><img src="./pics/beach.svg"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
